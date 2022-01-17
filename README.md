@@ -7,7 +7,7 @@
 - Install npm and run using node
 
 ## Usages
-- Using inquirer a user is asked a serie of questions about their team. Then a team portfolio is generated.
+- Using inquirer a user is asked a series of questions about their team. Then a team portfolio is generated.
 
 ## Screenshot/Video
 
