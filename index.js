@@ -1,7 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generatePage = require('./src/page-template')
-const { writeFile, copyFile } = require('./utils/generate-site');
+const { writeFile } = require('./utils/generate-site');
 
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
@@ -128,11 +128,6 @@ promptManager()
       .then(writeFileResponse => {
         console.log("------------------------")
         console.log(writeFileResponse.message);
-        return copyFile();
-      })
-      .then(copyFileResponse => {
-        console.log(copyFileResponse.message)
-        console.log("------------------------");
       })
       .catch(err => {
         console.log(err);
